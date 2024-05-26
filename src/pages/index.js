@@ -58,29 +58,25 @@ export default function Home() {
         >
           Leave a Review
         </Button>
-        ;
+        
       </main>
     );
   }
 
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="h-[30rem] bg-white w-4/12 rounded-3xl ">
-        <div className="ml-2 mt-2">
-          <div className="">
+    <main className={`flex min-h-screen flex-col items-center justify-center p-4 md:p-24 ${inter.className}`}>
+      <div className="bg-white p-4 md:p-8 rounded-xl shadow-lg w-full max-w-lg">
+          <div className="flex justify-between items-center mb-4">
+            <h1 className="text-xl md:text-2xl font-bold text-black">Leave a Review</h1>
             <CloseIcon
-              className="hover:opacity-80 cursor-pointer"
+              className="cursor-pointer"
               color="disabled"
               fontSize="large"
               onClick={toggleReviewForm}
-            ></CloseIcon>
+            />
           </div>
-          <h1 className="text-black m-2 font-bold text-2xl">Leave a review</h1>
-        </div>
 
-        <form className="mt-4 ml-4 h-[22rem] overflow-auto">
+        <form className="mt-4 h-[22rem] overflow-auto">
           <div className="border-b-2">
             <h3 className="text-black font-bold">Safty</h3>
             <p className="text-gray-400 text-sm">
@@ -163,11 +159,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div  className="flex ml-28 mt-5">
-            <button className="m-4 p-4 border rounded-xl text-white bg-green-400 hover:bg-green-600">
-              Submit Review
-            </button>
-          </div>
+          <div className="flex justify-center">
+              <button className="px-6 py-2 mt-10 bg-green-500 text-white rounded-xl hover:bg-green-600">
+                Submit Review
+              </button>
+            </div>
         </form>
       </div>
     </main>
