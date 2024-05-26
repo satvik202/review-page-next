@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import CloseIcon from "@mui/icons-material/Close";
 import { Rating } from "@mui/material";
 import Button from "@mui/material/Button";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import { useState } from "react";
 import { ThumbDownAlt, ThumbUpAlt } from "@mui/icons-material";
 
@@ -23,7 +22,7 @@ export default function Home() {
     "clean",
     "good listener",
     "Honest",
-    "Humerous",
+    "Humorous",
     "Kind",
     "Knowledgable",
     "Thoughtful",
@@ -162,6 +161,12 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+
+          <div  className="flex ml-28 mt-5">
+            <button className="m-4 p-4 border rounded-xl text-white bg-green-400 hover:bg-green-600">
+              Submit Review
+            </button>
           </div>
         </form>
       </div>
